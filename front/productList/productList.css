@@ -12,7 +12,7 @@ main{
     font-size: 1.7rem;
     margin-right: 1rem;
 }
-.current_page_position_arrow{ /* arrow 이미지라 두껍게 어떻게...*/
+.current_page_position_arrow{
     width: 1.7rem;
     margin-right: 1rem;
 }
@@ -100,6 +100,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 3.4rem;
 }
 .clothes_image_page_container span{
     font-size: 1.7rem;

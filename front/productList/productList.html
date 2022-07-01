@@ -11,10 +11,13 @@
     <link rel="stylesheet" href="../css/variables.css">
     <link rel="stylesheet" href="./productList.css">
     <link rel="stylesheet" href="./filter.css">
+
+    <!-- JS -->
+    <script defer src="./productList.js"></script>
 </head>
 <body>
-    <div class="filter_bg_container">
-        <div class="filter_container">
+    <div class="filter_bg_container hidden">
+        <div class="filter_container hidden">
             <img src="./Image/plus.png" alt="" class="filter_close">
             <div class="filter_header">필터</div>
             <div class="filter_item_container">
@@ -43,7 +46,7 @@
                 
                 <div class="filter_item">
                     <div class="filter_item_header">운동 수준</div>
-                    <div class="level_detail container">
+                    <div class="level_detail_container">
                         <div class="level_box">
                             <span class="level">초</span>
                             <span class="level_detail">이제 막 시작했어요</span>
@@ -61,11 +64,16 @@
                 </div>
                 <div class="filter_item">
                     <div class="filter_item_header">가격대</div>
-                
+                    <div class="price_container">
+                        <span>저가</span>
+                        <span>중저가</span>
+                        <span>고가</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
     <main>
         <div class="current_page_position">
             <span>운동별</span>
