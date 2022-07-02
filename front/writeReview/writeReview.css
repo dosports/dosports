@@ -32,6 +32,7 @@ header {
 
 .hamburger-bar {
     margin-right: 30.2rem;
+    cursor: pointer;
 }
 
 .hamburger-bar img {
@@ -367,8 +368,9 @@ header {
     font-size: 22px;
 
     width: 60rem;
-    height: 100%;
-    background-color: aliceblue;
+    height: 100vmax;
+    background-color: var(--white) ;
+    box-shadow: 3px 3px 20px var(--border);
     z-index: 99999;
 
     position: absolute;
@@ -376,18 +378,45 @@ header {
     top: 0;
 }
 
-#menu-bar .categories {
+#menu-bar ul {
     display: flex;
     justify-content: space-around;
     text-align: center;
 
     margin-top: 10rem;
-
 }
 
-.categories span {
+#menu-bar ul li {
+    width: 14rem;
+    height: 6rem;
+}
+
+#menu-bar span {
+    display: inline-block;
+    width: 15rem;
     font-weight: 600;
-    background-color: #FFF858
+    border: 2px solid var(--border);
+    padding: 1.4rem;
 }
 
+.cate-sports , .cate-brand {
+    display: flex;
+    flex-direction: column;
+}
 
+.cancel {
+    position: absolute;
+    right: 1rem ;
+    top : 2rem ;
+    cursor: pointer;
+}
+
+.cancel img {
+    width: 3rem;
+    height: 3rem;
+    transform: rotate(45deg);
+}
+
+.hide {
+    display: none;
+}
