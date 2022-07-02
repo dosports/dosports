@@ -192,6 +192,7 @@ header {
 .recommend-item > img {
 	width: 100%;
 	height: inherit;
+	transition: 0.3s;
 }
 #recommend-list:hover > button {
 	display: block;
@@ -225,6 +226,7 @@ header {
 .best-item > img {
 	width: 35rem;
 	height: 35rem;
+	transition: 0.3s;
 }
 .best-menu-text:hover {
 	border-bottom: 1px solid black;
