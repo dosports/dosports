@@ -113,7 +113,6 @@ window.addEventListener('load', (event)=>{
     $clothes_image_page_container.children[0].classList.add('page_check');
     $detail_category.children[0].classList.toggle('choose');
     changeClothImage();
-    // const $filter_bg_container = document.querySelector('.filter_bg_container');
-    // $filter_bg_container.style.height = document.innerHeight;
-    // console.log(document.documentElement.clientHeight);
+    const $filter_bg_container = document.querySelector('.filter_bg_container');
+    $filter_bg_container.style.height = `${document.documentElement.scrollHeight}px`;
 })
