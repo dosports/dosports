@@ -70,6 +70,7 @@
     margin-right: 12rem;
 }
 
+
 .physical_container{
     display: flex;
     align-items: center;
@@ -112,4 +113,15 @@
 }
 .price_container span:not(:last-child){
     margin-right: 4.8rem;
+}
+
+.borderTransparent{
+    padding: 0.3rem;
+    border: .3rem solid transparent;
+    border-radius: 1rem;
+}
+
+.check{
+    border: .3rem solid red;
+    border-radius: 1rem;
 }

@@ -30,6 +30,10 @@ main{
 }
 .detail_category_item{
     font-size: 2rem;
+    padding: 0.5rem 0;
+}
+.choose{
+    border-bottom: .2rem solid red;
 }
 
 /* sort */
@@ -106,3 +110,8 @@ main{
     font-size: 1.7rem;
     margin-right: 1rem;
 }
+
+.clothes_image_page_container span:hover{
+    cursor: pointer;
+}
+
