@@ -1,4 +1,5 @@
 
+
 * {
 	box-sizing: border-box;
 	font-family: "Roboto", "Noto", sans-serif;
@@ -72,8 +73,8 @@ header {
 }
 
 .search button img {
-    width : 32px;
-    height: 32px;
+    width : 2.4rem;
+    height: 2.4rem;
     
 }
 
@@ -149,8 +150,9 @@ header {
 
 .star-rating {
     margin-top: 2rem;
-    display: flex;
-    justify-content: center;
+    display: inline-block;
+    direction: rtl;
+    text-align: center;
 }
 
 #rating div label {
@@ -162,6 +164,20 @@ header {
 
 .rating-container span {
     text-align: center;
+}
+
+.star-rating label {
+    cursor : pointer;
+}
+
+.star-rating label:hover {
+    -webkit-text-fill-color: #FFF858;
+}
+.star-rating label:hover ~ label {
+    -webkit-text-fill-color: #FFF858;
+}
+.rating-container input[type=radio]:checked ~ label {
+    -webkit-text-fill-color: #FFF858;
 }
 
 
@@ -190,6 +206,14 @@ header {
     width: 100%;
 }
 
+.gender-box {
+    flex-shrink: 1;
+}
+.body-box {
+    flex-shrink: 2;
+}
+
+
 #setting .gender-box {
     width: 37vw;
     z-index: 1000;
@@ -212,8 +236,11 @@ header {
     display: flex;
     justify-content: space-around;
 }
-.body-box form {
-    margin-top: 1rem;
+
+.height input , .weight input {
+    margin-left : 2rem ;
+    margin-right: 1rem;
+    width: 13rem;
 }
 
 #setting .level {
@@ -223,24 +250,22 @@ header {
 
 #setting .level .level-box {
     width: 131rem;
-    height: 11.1rem;
+    height: 12rem;
     padding-top: 2.5rem;
     margin-top: 2rem ;
     margin-left: 1.2rem;
     text-align: center;
     z-index: 1000;
 }
-.level-box form {
-    margin-top: 1rem;
+.level-box span {
+    margin-bottom: 2rem;
 }
+
 .gender-box , .body-box , .level-box {
     border-radius: 28px;
     background-color: var(--border);
 }
 
-#setting radio[type=radio] {
-    appearance: auto;
-}
 .body-box div , .level-box div {
     margin-top: 1rem;
 }
@@ -257,6 +282,10 @@ header {
     margin-top: 3rem;
 }
 
+.review_content legend {
+    font-weight: 600;
+}
+
 #review .review-box {
     width : 80rem ;
     position: absolute;
@@ -265,12 +294,18 @@ header {
 }
 
 
-.review_content input {
+.review_content textarea {
     width: 159%;
     height: 60rem;
 
+    padding: 4rem;
+
     margin-top: 2rem;
     border-radius: 28px;
+}
+
+.review_content textarea::placeholder {
+    color: var(--border);
 }
 
 .review_pic {
@@ -283,7 +318,7 @@ header {
 
 
 .review_pic .pic {
-    width: 22rem;
+    width: 24rem;
     height: 12rem;
     background-color: var(--border);
 }
@@ -296,7 +331,63 @@ header {
 }
 
 #sub .sub-container {
-    width : 80rem; 
-    position: absolute;
-    left: 10%;
+    width : 37rem; 
+    margin: 0 auto;
+    height: 20rem;
 }
+
+.sub-container input:first-child {
+    width: 13rem;
+    height: 9rem;
+    border: 0;
+    border-radius: 19px;
+    background-color: var(--border);
+    margin-right: 2rem;
+}
+.sub-container input:last-child {
+    width: 20rem;
+    height: 9rem;
+    border: 0;
+    border-radius: 19px;
+    background-color: var(--border);
+}
+
+.gender input[type=radio] , .level input[type=radio] {
+    appearance: auto;
+}
+
+.sub-container input {
+    cursor: pointer;
+}
+
+
+/*  menu bar */
+
+/* #menu-bar {
+    font-size: 22px;
+
+    width: 60rem;
+    height: 100%;
+    background-color: aliceblue;
+    z-index: 99999;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#menu-bar .categories {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+    margin-top: 10rem;
+
+}
+
+.categories span {
+    font-weight: 600;
+    background-color: #FFF858
+}
+
+ */

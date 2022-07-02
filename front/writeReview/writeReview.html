@@ -23,7 +23,7 @@
         </div>
     </header>
     <main>
-        <form action="#" method="post" name="review">
+        <form action="" method="get" name="review" id="review-form">
             <section id="info">
                 <div class="info-container">
                     <div class="item-img"></div>
@@ -37,13 +37,13 @@
             <section id="rating">
                 <div class="rating-container">
                     <span>상품은 어떠셨나요?</span>
-                    <div class="star-rating">
-                        <label for="star1">⭐️</label><input type="radio" name="star" id="star1">
-                        <label for="star2">⭐️</label><input type="radio" name="star" id="star2">
-                        <label for="star3">⭐️</label><input type="radio" name="star" id="star3">
-                        <label for="star4">⭐️</label><input type="radio" name="star" id="star4">
-                        <label for="star5">⭐️</label><input type="radio" name="star" id="star5">
-                    </div>
+                    <fieldset class="star-rating">
+                        <input type="radio" name="star" id="star1"><label for="star1">⭐️</label>
+                        <input type="radio" name="star" id="star2"><label for="star2">⭐️</label>
+                        <input type="radio" name="star" id="star3"><label for="star3">⭐️</label>
+                        <input type="radio" name="star" id="star4"><label for="star4">⭐️</label>
+                        <input type="radio" name="star" id="star5"><label for="star5">⭐️</label>
+                    </fieldset>
                 </div>
             </section>
             <section id="setting">
@@ -74,10 +74,10 @@
                     <div class="level">
                         <div class="level-box">
                             <span>운동 수준</span>
-                            <div class="level">
+                            <div>
                                 <label for="beginning">초</label><input type="radio" name="level" id="beginning">
-                                <label for="intermediate">중</label><input type="radio" name="gender" id="intermediate">
-                                <label for="high">고</label><input type="radio" name="gender" id="high">
+                                <label for="intermediate">중</label><input type="radio" name="level" id="intermediate">
+                                <label for="high">고</label><input type="radio" name="level" id="high">
                             </div>
                         </div>
                     </div>
@@ -88,14 +88,11 @@
                     <div class="review_content">
                         
                             <legend>솔직한 리뷰를 남겨주세요</legend>
-                            <input type="text" placeholder="욕설과 비방은 삼가헤주세요." >
+                            <textarea name="content" cols="150" rows="15" placeholder="욕설과 비방은 삼가헤주세요." ></textarea>
                         
                     </div>
                     <div class="review_pic">
-                        <div class="pic"></div>
-                        <div class="pic"></div>
-                        <div class="pic"></div>
-                        <div class="pic"></div>
+                        <input type="file" name="img_path" id="review-pic">
                     </div>
                 </div>
             </section>
@@ -107,7 +104,25 @@
             </section>
         </form>
     </main>
-    <footer></footer>
+
+    <!--
+    <div id="menu-bar">
+        <div class="categories">
+            <span>운동별</span> <ul class="cate-sports"> 
+                <li>헬스복</li>
+                <li>요가/필라테스복</li>
+                <li>테니스복</li>
+                <li>골프복</li>
+                <li>수영복</li>
+            </ul>
+            <span>브랜드별</span> <ul class="cate-brand"> 
+                <li>나이키</li>
+                <li>아디다스</li>
+            </ul>
+            <span>홈트도구</span>
+        </div>
+    </div>
+    -->
 
     <!--javascript-->
     <script src="./writeReview.js"></script>
