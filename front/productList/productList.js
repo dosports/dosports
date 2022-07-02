@@ -18,17 +18,9 @@ $filter_close.addEventListener('click', (event) => {
 const $clothes_image_page_container = document.querySelector('.clothes_image_page_container');
 
 $clothes_image_page_container.addEventListener('click', (event) =>{
-    const target = event.target;
-    const page_spans = target.parentNode.children;
-    for(let i=0; i<page_spans.length;i++){
-        page_spans[i].classList.remove('page_check');
-    }
-    if(target.tagName != 'SPAN') return;
-    target.classList.add('page_check');
+    addClassToChoose($clothes_image_page_container,'page_check',event, 'SPAN');
     changeClothImage();
 })
-
-
 
 // filter page click _ check sign
 function removeCheckSign(dom, className){
@@ -68,6 +60,8 @@ $price_container.addEventListener('click', (event)=>{
 $detail_category = document.querySelector('.detail_category');
 $detail_category.addEventListener('click', (event) =>{
     addClassToChoose($detail_category, 'choose', event, 'SPAN');
+    $clothes_image_page_container.querySelector('.page_check').classList.remove('page_check');
+    $clothes_image_page_container.children[0].classList.add('page_check');
     changeClothImage();
 })
 
@@ -83,7 +77,6 @@ $expert_opinion_arrow.addEventListener('click',(event) => {
 // change cloth image
 // const cloth_detail_category = ["상의", "팬츠", "스커트", "운동화", "스포츠용품"];
 const $cloth_images = document.querySelectorAll('.cloth_image');
-console.log($cloth_images);
 const cloth_images = {
     '상의' :
     ["https://image.nbkorea.com/NBRB_Product/20220627/NB20220627124135358001.jpg", 
@@ -106,7 +99,6 @@ const cloth_images = {
     'https://cdn3-aka.makeshop.co.kr/shopimages/jo112/0210000000123.jpg?1639716730',
     'https://cdn3-aka.makeshop.co.kr/shopimages/jo112/0210000000173.jpg?1639714567']
 };
-const cloth_categorys = Object.keys(cloth_images);
 function changeClothImage(){
     const cloth_cate = $detail_category.querySelector('.choose').innerText;
     const page_num = $clothes_image_page_container.querySelector('.page_check').innerText;
@@ -114,7 +106,6 @@ function changeClothImage(){
     for(let i=0;i<$cloth_images.length;i++){
         $cloth_images[i].children[0].src = imageSrc[page_num-1];
     }
-    
 }
 
 // on load
