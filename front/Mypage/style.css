@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+a,a:active {
+    text-decoration: none;
+    color:inherit;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+nav {
+    position: absolute;
+    padding: 0 16px;
+    justify-content: space-between;
+    position: fixed;
+    left:0;
+    top: 0;
+    height: 56px;
+    background-color: #ffffff;
+    width: 100%;
+    margin: 0 40px;
+}
+#container-box{
+
+    height:100%;
+    margin: 0 50px;
+
+}
+#user_box{
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    font-size:15px;
+    display: block;
+    margin-top: 56px;
+    justify-content: center;
+    border-bottom:2px solid lightgray;
+}
+
+#search-form{
+    flex: 1;
+    margin-left: 60px;
+    padding: 0 90px;
+
+}
+#search-form input{
+    padding: 2px 6px;
+    border: 3px solid #3B1BAA;
+ /* border-right: none;*/
+    border-radius: 30px;
+    flex: 1px;
+    height: 30px;
+}
+/*#search-form input::placeholder{
+    color:hsl(0,0%,53.3%);
+    font-size: 20px;
+}*/
+
+.profile-block{
+    justify-content: space-between;
+
+}
+#profile-btn{
+    margin:15px 0 0 0;
+    padding: 1px 0;
+    
+
+}
+#profile-btn img{
+
+    margin:0 2.5px;
+    border-radius: 50%;
+}
+#profile-block-right{
+    padding-top: 30px;
+    min-width: 225px;
+  justify-content: flex-end;
+}
+#profile-block-right img{
+    width: 20px;
+    height: 18px;
+}
+.block{
+    border-bottom:2px solid lightgray;
+    position: relative;  
+    justify-content: space-between;
+    height: 30px;
+    width: 100%;
+    font-weight: bold;
+}
+.block-right{
+    min-width: 225px;
+    justify-content: flex-end;
+    margin-left:20px ;
+
+}
+
+#stamp-btn img{ 
+    padding:5px 8px 0 0;  
+}
+#username{
+    margin-left: -1000px;
+    font-size: 25px;
+    padding-top: 13px;
+    color: black;
+    text-align: left;
+    font-family:Helvetica, serif;
+    font-size: 23px;
+}
+#recent-block{
+    height: 180px;
+    width: 100%;
+    background-color: #ffffff;
+    font-weight: bold;
+    border-bottom:2px solid lightgray;
+    justify-content: flex-start;
+}
+#recently,#written-review{
+    margin: 10px 0;
+}
+#recent-block button{
+    min-width: 100px;
+    justify-content: flex-end;
+}
+#recent-img {
+    justify-content: space-around;
+}
+.re-img {
+    /*background-color: lightgray;*/
+    margin-top: 10px;
+    height: 100px;
+    width: 170px;
+    padding: 10px;
+   
+}
+.re-img img{
+    width: 100%;
+    height: 100%
+}
+#last-block{
+    height: 400px;
+    width: 100%;
+    background-color: #ffffff;
+    font-weight: bold;
+    border-bottom:2px solid lightgray;
+    justify-content: flex-start;
+}
+#last-block button{
+    min-width: 100px;
+    justify-content: flex-end;
+}
+.details{
+    margin-left: 20px;
+    max-height: fit-content;
+}
+.details .detail-name{
+    margin-top: 1px;
+
+}
+.details .detail-more{
+    height: 30px;
+}
+.details .detail-box{
+    margin-top: 1px;
+    width: 330px;
+}
+.review{
+    margin-top: 5px;
+    border:2px solid #3B1BAA;
+    border-radius: 10px 10px 10px 10px;
+    width:100%;
+    height:180px;
+}
+.review .re-img{
+    margin:10px 0 10px 20px;
+    height:100px;
+    width: 130px;
+    background-color:lightgray;
+}
+
+
+/*mypage_details*/
+#review-block{
+     background-color:#ffffff;
+     width: 100%;
+     font-weight: bold;
+}
+#review_details_block{
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    font-size:15px;
+    display: block;
+    margin-top: 56px;
+    font-weight: bold;
+    justify-content: center;
+}
+#my-review-box{
+    padding: 60px 0 15px 5px;
+}
+#review-data{
+    flex-direction: column;
+}
+#last-block button{
+    min-width: 100px;
+    justify-content: flex-start;
+}
