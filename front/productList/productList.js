@@ -70,3 +70,12 @@ $detail_category = document.querySelector('.detail_category');
 $detail_category.addEventListener('click', (event) =>{
     addClassToChoose($detail_category, 'choose', event, 'SPAN');
 })
+
+// expert opinion
+const $expert_opinion_arrow = document.querySelector('.expert_opinion_arrow');
+const $expert_opinion_main = document.querySelector('.expert_opinion_main');
+
+$expert_opinion_arrow.addEventListener('click',(event) => {
+    $expert_opinion_main.classList.toggle('expert_opinion_show');
+    $expert_opinion_arrow.classList.toggle('expert_opinion_arrow_up');
+})

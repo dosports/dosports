@@ -58,7 +58,7 @@ main{
 }
 
 /* expert_opinion */
-.expert_opinion{
+.expert_opinion_header{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,7 +73,19 @@ main{
     transform: rotate(90deg);
     width: 2.2rem;
 }
-
+.expert_opinion_main{
+    background-color: var(--border);
+    width: 100%;
+    height: 0;
+    transition: height 1s ease-in-out;
+}
+.expert_opinion_show{
+    height: 20rem;
+    transition: height 1s ease-in-out;
+}
+.expert_opinion_arrow_up{
+    transform: rotate(-90deg);
+}
 /* clothes_image_container */
 .clothes_image_container{
     display: grid;
