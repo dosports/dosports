@@ -272,6 +272,10 @@ header {
     z-index: 100;
 }
 
+.gender-box input , .level-box input {
+    margin-right: 4rem;
+}
+
 
 /* review */
 #review {
@@ -374,7 +378,7 @@ header {
     box-shadow: 3px 3px 20px var(--border);
     z-index: 99999;
 
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
 }
