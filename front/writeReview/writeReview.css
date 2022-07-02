@@ -71,6 +71,7 @@ header {
     height: 80%;
     border: 0;
     background-color: transparent;
+    margin-left: 2rem;
 }
 
 .search button img {
@@ -256,7 +257,6 @@ header {
     margin-top: 2rem ;
     margin-left: 1.2rem;
     text-align: center;
-    z-index: 1000;
 }
 .level-box span {
     margin-bottom: 2rem;
@@ -269,6 +269,7 @@ header {
 
 .body-box div , .level-box div {
     margin-top: 1rem;
+    z-index: 100;
 }
 
 
