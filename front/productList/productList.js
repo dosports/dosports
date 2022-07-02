@@ -7,7 +7,7 @@ const $filter_close = document.querySelector('.filter_close');
 $sort_filter_icon.addEventListener('click', (event) =>{
     $filter_bg_container.className = "filter_bg_container show"
     $filter_container.className = "filter_container show"
-    
+
 })
 $filter_close.addEventListener('click', (event) => {
     $filter_bg_container.className = "filter_bg_container hidden"
@@ -79,23 +79,23 @@ $expert_opinion_arrow.addEventListener('click',(event) => {
 const $cloth_images = document.querySelectorAll('.cloth_image');
 const cloth_images = {
     '상의' :
-    ["https://image.nbkorea.com/NBRB_Product/20220627/NB20220627124135358001.jpg", 
+    ["https://image.nbkorea.com/NBRB_Product/20220627/NB20220627124135358001.jpg",
     'https://image.nbkorea.com/NBRB_Product/20220627/NB20220627124201146001.jpg',
     'https://image.nbkorea.com/NBRB_Product/20220627/NB20220627124148594001.jpg'],
     '팬츠' :
-    ["https://image.nbkorea.com/NBRB_Product/20220624/NB20220624142359153001.jpg", 
+    ["https://image.nbkorea.com/NBRB_Product/20220624/NB20220624142359153001.jpg",
     'https://image.nbkorea.com/NBRB_Product/20220624/NB20220624142426181001.jpg',
     'https://image.nbkorea.com/NBRB_Product/20220624/NB20220624142412883001.jpg'],
     '스커트' :
-    ["https://image.nbkorea.com/NBRB_Product/20220523/NB20220523150748131001.jpg", 
+    ["https://image.nbkorea.com/NBRB_Product/20220523/NB20220523150748131001.jpg",
     'https://image.nbkorea.com/NBRB_Product/20220329/NB20220329163014985001.jpg',
     'https://image.nbkorea.com/NBRB_Product/20220120/NB20220120105038056001.jpg'],
     '운동화' :
-    ["https://image.nbkorea.com/NBRB_Product/20220608/NB20220608160147835001.jpg", 
+    ["https://image.nbkorea.com/NBRB_Product/20220608/NB20220608160147835001.jpg",
     'https://image.nbkorea.com/NBRB_Product/20220629/NB20220629092520275001.jpg',
     'https://image.nbkorea.com/NBRB_Product/20220629/NB20220629174428397001.jpg'],
     '스포츠용품' :
-    ["https://cdn3-aka.makeshop.co.kr/shopimages/jo112/0210000000383.jpg?1647239036", 
+    ["https://cdn3-aka.makeshop.co.kr/shopimages/jo112/0210000000383.jpg?1647239036",
     'https://cdn3-aka.makeshop.co.kr/shopimages/jo112/0210000000123.jpg?1639716730',
     'https://cdn3-aka.makeshop.co.kr/shopimages/jo112/0210000000173.jpg?1639714567']
 };
@@ -113,4 +113,7 @@ window.addEventListener('load', (event)=>{
     $clothes_image_page_container.children[0].classList.add('page_check');
     $detail_category.children[0].classList.toggle('choose');
     changeClothImage();
+    // const $filter_bg_container = document.querySelector('.filter_bg_container');
+    // $filter_bg_container.style.height = document.innerHeight;
+    // console.log(document.documentElement.clientHeight);
 })
