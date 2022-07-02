@@ -2,7 +2,8 @@ const review_form = document.querySelector("#review-form") ;
 const form_input = review_form.querySelectorAll("input");
 const hamburger_icon = document.querySelector(".hamburger-bar") ;
 const menu_bar = document.querySelector("#menu-bar")
-const cancel_btn = document.querySelector("#menu-bar .cancel") ;
+const menu_cancel_btn = document.querySelector("#menu-bar .cancel") ;
+const form_cancel_btn = document.querySelector("#sub .sub-container .form-cancel-btn");
 
 
 function clickBurgerBar() {
@@ -17,8 +18,15 @@ function clickCancelBtn () {
     menu_bar.classList.add("hide");
 }
 
+function cancelForm() {
+    history.go(-1);
+}
+
+
 review_form.addEventListener("submit", subForm);
 
 hamburger_icon.addEventListener("click" , clickBurgerBar) ;
 
-cancel_btn.addEventListener("click" , clickCancelBtn) ;
+menu_cancel_btn.addEventListener("click" , clickCancelBtn) ;
+
+form_cancel_btn.addEventListener("click", cancelForm);
